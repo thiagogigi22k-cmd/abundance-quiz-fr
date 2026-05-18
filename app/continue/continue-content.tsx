@@ -2,6 +2,7 @@
 
 import { useSearchParams, useRouter } from "next/navigation"
 import Image from "next/image"
+import { images } from "@/lib/images"
 
 export default function ContinueContent() {
   const searchParams = useSearchParams()
@@ -16,7 +17,7 @@ export default function ContinueContent() {
     <div className="min-h-screen w-full flex flex-col items-center justify-center relative overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/background.png"
+          src={images.background}
           alt=""
           fill
           className="object-cover"
@@ -28,7 +29,7 @@ export default function ContinueContent() {
         <div className="mb-4 flex justify-center">
           <div className="w-28 h-28 relative">
             <Image
-              src="/images/logo.png"
+              src={images.logo}
               alt="The Age of Abundance"
               width={112}
               height={112}

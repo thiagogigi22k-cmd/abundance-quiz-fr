@@ -4,6 +4,7 @@ import { useSearchParams } from "next/navigation"
 import Image from "next/image"
 import { useState, useEffect, useRef } from "react"
 import { Check, Star, Sparkles } from "lucide-react"
+import { images } from "@/lib/images"
 
 // Step types
 type StepType = "continue" | "journey" | "unlocked" | "question" | "unlock-screen" | "motivational" | "final"
@@ -70,7 +71,7 @@ const quizSteps: Array<QuestionStep | UnlockStep | MotivationalStep | { type: "c
     type: "unlock-screen",
     title: "I Choose My Future",
     description: "The power to change your life is in your hands!",
-    image: "/images/man-silhouette-stars.jpg",
+    image: images.manSilhouetteStars,
   },
   {
     type: "question",
@@ -108,7 +109,7 @@ const quizSteps: Array<QuestionStep | UnlockStep | MotivationalStep | { type: "c
     type: "unlock-screen",
     title: "Faith Decision",
     description: "Your Faith Will Move Mountains",
-    image: "/images/praying-hands.jpg",
+    image: images.prayingHands,
   },
   {
     type: "question",
@@ -121,7 +122,7 @@ const quizSteps: Array<QuestionStep | UnlockStep | MotivationalStep | { type: "c
     type: "unlock-screen",
     title: "Dream Home",
     description: "Your Dream Home Is on Its Way",
-    image: "/images/dream-home.jpg",
+    image: images.dreamHome,
   },
   {
     type: "question",
@@ -134,7 +135,7 @@ const quizSteps: Array<QuestionStep | UnlockStep | MotivationalStep | { type: "c
     type: "unlock-screen",
     title: "Dream Car",
     description: "Your Dream Car Is Reserved",
-    image: "/images/dream-car.jpg",
+    image: images.dreamCar,
   },
   {
     type: "question",
@@ -152,7 +153,7 @@ const quizSteps: Array<QuestionStep | UnlockStep | MotivationalStep | { type: "c
     type: "unlock-screen",
     title: "Happy Family",
     description: "The Happy Family You Deserve",
-    image: "/images/happy-family.jpg",
+    image: images.happyFamily,
   },
   {
     type: "question",
@@ -170,7 +171,7 @@ const quizSteps: Array<QuestionStep | UnlockStep | MotivationalStep | { type: "c
     type: "unlock-screen",
     title: "Perfect Health",
     description: "Your Perfect Health Is Activated",
-    image: "/images/perfect-health.jpg",
+    image: images.perfectHealth,
   },
   {
     type: "question",
@@ -183,14 +184,14 @@ const quizSteps: Array<QuestionStep | UnlockStep | MotivationalStep | { type: "c
     type: "unlock-screen",
     title: "Abundance",
     description: "Imagine... $277,000 being deposited into your account right now!",
-    image: "/images/abundance.jpg",
+    image: images.abundance,
     buttonText: "YES! I believe, I receive!",
   },
   {
     type: "motivational",
     title: "{name}",
     description: "Your manifestation potential depends on your choice, think big to manifest big things, you are the size of your courage.",
-    image: "/images/abundance.jpg",
+    image: images.abundance,
     buttonText: "Continue Journey",
     addToBalance: 2000000,
   },
@@ -210,7 +211,7 @@ const quizSteps: Array<QuestionStep | UnlockStep | MotivationalStep | { type: "c
     type: "unlock-screen",
     title: "100x Boost",
     description: "Your Manifestation Power Just Multiplied by 100x",
-    image: "/images/100x-boost.jpg",
+    image: images.boost100x,
   },
   {
     type: "question",
@@ -235,7 +236,7 @@ const quizSteps: Array<QuestionStep | UnlockStep | MotivationalStep | { type: "c
     type: "unlock-screen",
     title: "Blocks Broken",
     description: "All Mental Blocks Have Been Removed",
-    image: "/images/blocks-broken.jpg",
+    image: images.blocksBroken,
   },
   {
     type: "question",
@@ -273,16 +274,16 @@ const quizSteps: Array<QuestionStep | UnlockStep | MotivationalStep | { type: "c
 ]
 
 const achievements = [
-  { name: "I Choose My Future", image: "/images/man-silhouette-stars.jpg", unlockedAtStep: 7 },
-  { name: "Faith Decision", image: "/images/praying-hands.jpg", unlockedAtStep: 12 },
-  { name: "Dream Home", image: "/images/dream-home.jpg", unlockedAtStep: 14 },
-  { name: "Dream Car", image: "/images/dream-car.jpg", unlockedAtStep: 16 },
-  { name: "Happy Family", image: "/images/happy-family.jpg", unlockedAtStep: 18 },
-  { name: "Perfect Health", image: "/images/perfect-health.jpg", unlockedAtStep: 20 },
-  { name: "Abundance", image: "/images/abundance.jpg", unlockedAtStep: 22 },
-  { name: "100x Boost", image: "/images/100x-boost.jpg", unlockedAtStep: 25 },
-  { name: "Blocks Broken", image: "/images/blocks-broken.jpg", unlockedAtStep: 28 },
-  { name: "100x Multiplication", image: "/images/100x-multiplication.jpg", unlockedAtStep: 2 },
+  { name: "I Choose My Future", image: images.manSilhouetteStars, unlockedAtStep: 7 },
+  { name: "Faith Decision", image: images.prayingHands, unlockedAtStep: 12 },
+  { name: "Dream Home", image: images.dreamHome, unlockedAtStep: 14 },
+  { name: "Dream Car", image: images.dreamCar, unlockedAtStep: 16 },
+  { name: "Happy Family", image: images.happyFamily, unlockedAtStep: 18 },
+  { name: "Perfect Health", image: images.perfectHealth, unlockedAtStep: 20 },
+  { name: "Abundance", image: images.abundance, unlockedAtStep: 22 },
+  { name: "100x Boost", image: images.boost100x, unlockedAtStep: 25 },
+  { name: "Blocks Broken", image: images.blocksBroken, unlockedAtStep: 28 },
+  { name: "100x Multiplication", image: images.multiplication100x, unlockedAtStep: 2 },
 ]
 
 const notifications = [
@@ -297,16 +298,16 @@ const notifications = [
 ]
 
 const portals = [
-  { name: "I Choose My Future", image: "/images/man-silhouette-stars.jpg" },
-  { name: "Faith Decision", image: "/images/praying-hands.jpg" },
-  { name: "Dream Home", image: "/images/dream-home.jpg" },
-  { name: "Dream Car", image: "/images/dream-car.jpg" },
-  { name: "Happy Family", image: "/images/happy-family.jpg" },
-  { name: "Perfect Health", image: "/images/perfect-health.jpg" },
-  { name: "Abundance", image: "/images/abundance.jpg" },
-  { name: "100x Boost", image: "/images/100x-boost.jpg" },
-  { name: "Blocks Broken", image: "/images/blocks-broken.jpg" },
-  { name: "100x Multiplication", image: "/images/100x-multiplication.jpg" },
+  { name: "I Choose My Future", image: images.manSilhouetteStars },
+  { name: "Faith Decision", image: images.prayingHands },
+  { name: "Dream Home", image: images.dreamHome },
+  { name: "Dream Car", image: images.dreamCar },
+  { name: "Happy Family", image: images.happyFamily },
+  { name: "Perfect Health", image: images.perfectHealth },
+  { name: "Abundance", image: images.abundance },
+  { name: "100x Boost", image: images.boost100x },
+  { name: "Blocks Broken", image: images.blocksBroken },
+  { name: "100x Multiplication", image: images.multiplication100x },
 ]
 
 export default function UnifiedQuiz() {
@@ -365,7 +366,7 @@ export default function UnifiedQuiz() {
 
   // Preload seed card images from the very start of the quiz
   useEffect(() => {
-    const seedImages = ["/images/seed-barren.jpg", "/images/seed-sprout.jpg", "/images/seed-tree.jpg", "/images/seed-golden.jpg", "/images/seed-divine.jpg"]
+    const seedImages = [images.seedBarren, images.seedSprout, images.seedTree, images.seedGolden, images.seedDivine]
     seedImages.forEach((src) => {
       const link = document.createElement("link")
       link.rel = "preload"
@@ -468,11 +469,11 @@ export default function UnifiedQuiz() {
   const renderContinueScreen = () => (
     <div className="min-h-screen w-full flex flex-col items-center justify-center relative overflow-hidden bg-black">
       <div className="absolute inset-0 z-0">
-        <Image src="/images/background.png" alt="Background" fill className="object-cover" priority />
+        <Image src={images.background} alt="Background" fill className="object-cover" priority />
       </div>
       <div className="relative z-10 w-full max-w-sm px-4 flex flex-col items-center">
         <div className="mb-4 flex justify-center">
-          <Image src="/images/logo.png" alt="Logo" width={112} height={112} className="object-contain" priority />
+          <Image src={images.logo} alt="Logo" width={112} height={112} className="object-contain" priority />
         </div>
         <div className="w-full bg-[#0d0d1a]/95 rounded-xl border-2 border-[#D4AF37] p-5">
           <div className="flex items-start justify-between mb-5">
@@ -499,12 +500,12 @@ export default function UnifiedQuiz() {
   const renderJourneyScreen = () => (
     <div className="min-h-screen w-full flex flex-col relative overflow-hidden bg-black">
       <div className="absolute inset-0 z-0">
-        <Image src="/images/background.png" alt="Background" fill className="object-cover object-bottom" priority />
+        <Image src={images.background} alt="Background" fill className="object-cover object-bottom" priority />
         <div className="absolute inset-0 bg-gradient-to-b from-black via-black/95 to-transparent" style={{ height: "60%" }} />
       </div>
       <div className="relative z-10 w-full flex flex-col items-center px-4 pt-6 pb-8">
         <div className="mb-4">
-          <Image src="/images/logo.png" alt="Logo" width={80} height={80} className="object-contain" priority />
+          <Image src={images.logo} alt="Logo" width={80} height={80} className="object-contain" priority />
         </div>
         <h1 className="text-[#D4AF37] text-xl font-bold text-center mb-4">Hello, {name} Your Journey has begun...</h1>
         <p className="text-gray-400 text-sm tracking-wider mb-1">ACCOUNT BALANCE</p>
@@ -537,12 +538,12 @@ export default function UnifiedQuiz() {
     return (
       <div className="min-h-screen w-full flex flex-col relative overflow-hidden bg-black">
         <div className="absolute inset-0 z-0">
-          <Image src="/images/background.png" alt="Background" fill className="object-cover object-bottom" priority />
+          <Image src={images.background} alt="Background" fill className="object-cover object-bottom" priority />
           <div className="absolute inset-0 bg-gradient-to-b from-black via-black/95 to-transparent" style={{ height: "70%" }} />
         </div>
         <div className="relative z-10 w-full flex flex-col items-center px-4 pt-8 pb-8">
           <div className="mb-6">
-            <Image src="/images/logo.png" alt="Logo" width={70} height={70} className="object-contain" priority />
+            <Image src={images.logo} alt="Logo" width={70} height={70} className="object-contain" priority />
           </div>
           <div className="w-full max-w-sm bg-[#0d0d1a]/95 rounded-xl border-2 border-[#D4AF37] p-5">
             <div className="flex items-center justify-center gap-2 mb-5">
@@ -552,7 +553,7 @@ export default function UnifiedQuiz() {
             </div>
             <div className="flex justify-center mb-5">
               <div className="w-40 h-40 rounded-xl border-2 border-[#D4AF37] overflow-hidden">
-                <Image src="/images/100x-multiplication.jpg" alt="Golden abundance" width={160} height={160} className="object-cover w-full h-full" />
+                <Image src={images.multiplication100x} alt="Golden abundance" width={160} height={160} className="object-cover w-full h-full" />
               </div>
             </div>
             <h2 className="text-[#D4AF37] text-2xl font-bold text-center mb-3">100x Multiplication</h2>
@@ -579,11 +580,11 @@ export default function UnifiedQuiz() {
     return (
       <div className="min-h-screen w-full flex flex-col relative overflow-hidden bg-black">
         <div className="absolute inset-0 z-0">
-          <Image src="/images/background.png" alt="Background" fill className="object-cover object-bottom" priority />
+          <Image src={images.background} alt="Background" fill className="object-cover object-bottom" priority />
           <div className="absolute inset-0 bg-gradient-to-b from-black via-black/95 to-transparent" style={{ height: "60%" }} />
         </div>
         <div className="relative z-10 w-full flex flex-col items-center px-4 pt-6 pb-8">
-          <div className="mb-4"><Image src="/images/logo.png" alt="Logo" width={60} height={60} className="object-contain" priority /></div>
+          <div className="mb-4"><Image src={images.logo} alt="Logo" width={60} height={60} className="object-contain" priority /></div>
           <h1 className="text-[#D4AF37] text-xl font-bold text-center mb-3">Hello, {name} Your Journey has begun...</h1>
           <p className="text-gray-400 text-sm tracking-wider mb-1">ACCOUNT BALANCE</p>
           <p className="text-[#D4AF37] text-3xl font-bold mb-4 animate-pulse-gold">${formatBalance(balance)}</p>
@@ -653,7 +654,7 @@ export default function UnifiedQuiz() {
     return (
       <div className="min-h-screen w-full flex flex-col relative overflow-hidden bg-black">
         <div className="absolute inset-0 z-0">
-          <Image src="/images/background.png" alt="Background" fill className="object-cover object-bottom" priority />
+          <Image src={images.background} alt="Background" fill className="object-cover object-bottom" priority />
           <div className="absolute inset-0 bg-gradient-to-b from-black via-black/90 to-black/70" />
         </div>
         <div className="relative z-10 w-full flex flex-col items-center justify-center min-h-screen px-4 py-8">
@@ -690,7 +691,7 @@ export default function UnifiedQuiz() {
     return (
       <div className="min-h-screen w-full flex flex-col relative overflow-hidden bg-black">
         <div className="absolute inset-0 z-0">
-          <Image src="/images/background.png" alt="Background" fill className="object-cover object-bottom" priority />
+          <Image src={images.background} alt="Background" fill className="object-cover object-bottom" priority />
           <div className="absolute inset-0 bg-gradient-to-b from-black via-black/90 to-black/70" />
         </div>
         <div className="relative z-10 w-full flex flex-col items-center justify-center min-h-screen px-4 py-8">
@@ -721,7 +722,7 @@ export default function UnifiedQuiz() {
             <Star className="w-8 h-8 text-[#F9D423] animate-spin-slow" fill="#F9D423" />
           </div>
           <div className="flex flex-col items-center mb-6 mt-4 animate-pulse-soft">
-            <Image src="/images/logo.png" alt="Logo" width={80} height={80} className="object-contain" priority />
+            <Image src={images.logo} alt="Logo" width={80} height={80} className="object-contain" priority />
           </div>
           <h1 className="text-white text-[28px] font-bold text-center mb-6 leading-tight">
             {name.toLowerCase()}, you{"'"}ve made it this<br />far... and that{"'"}s no<br />accident.
@@ -739,7 +740,7 @@ export default function UnifiedQuiz() {
 
           {/* Preload offer images hidden */}
           <div className="absolute w-0 h-0 overflow-hidden" aria-hidden="true">
-            {["/images/seed-barren.jpg", "/images/seed-sprout.jpg", "/images/seed-tree.jpg", "/images/seed-golden.jpg", "/images/seed-divine.jpg"].map((src) => (
+            {[images.seedBarren, images.seedSprout, images.seedTree, images.seedGolden, images.seedDivine].map((src) => (
               <Image key={src} src={src} alt="" width={1} height={1} priority />
             ))}
           </div>
@@ -754,11 +755,11 @@ export default function UnifiedQuiz() {
               {/* Seed Cards */}
               <div className="w-full flex flex-col gap-8">
                 {[
-                  { price: "$0", desc: "The life that stays as it is.", image: "/images/seed-barren.jpg", gold: false, link: "https://v0-ichoosethislfe.vercel.app/" },
-                  { price: "$27", desc: "The life that begins to awaken.", image: "/images/seed-sprout.jpg", gold: true, link: "https://www.checkout-ds24.com/product/691574" },
-                  { price: "$47", desc: "The life that grows with purpose.", image: "/images/seed-tree.jpg", gold: true, link: "https://www.checkout-ds24.com/product/691572" },
-                  { price: "$77", desc: "The life of full abundance and manifestation.", image: "/images/seed-golden.jpg", gold: true, link: "https://www.checkout-ds24.com/product/691571" },
-                  { price: "$100", desc: "The life of divine overflow and miracles.", image: "/images/seed-divine.jpg", gold: true, link: "https://www.checkout-ds24.com/product/685315" },
+                  { price: "$0", desc: "The life that stays as it is.", image: images.seedBarren, gold: false, link: "https://v0-ichoosethislfe.vercel.app/" },
+                  { price: "$27", desc: "The life that begins to awaken.", image: images.seedSprout, gold: true, link: "https://www.checkout-ds24.com/product/691574" },
+                  { price: "$47", desc: "The life that grows with purpose.", image: images.seedTree, gold: true, link: "https://www.checkout-ds24.com/product/691572" },
+                  { price: "$77", desc: "The life of full abundance and manifestation.", image: images.seedGolden, gold: true, link: "https://www.checkout-ds24.com/product/691571" },
+                  { price: "$100", desc: "The life of divine overflow and miracles.", image: images.seedDivine, gold: true, link: "https://www.checkout-ds24.com/product/685315" },
                 ].map((seed, index) => (
                   <div key={index} className="w-full flex flex-col items-center">
                     {/* Image */}
@@ -811,7 +812,7 @@ export default function UnifiedQuiz() {
         <div className="absolute top-20 left-8 w-3 h-3 bg-[#F9D423] rounded-full animate-pulse-circle" />
         <div className="absolute top-16 right-10 w-4 h-4 bg-[#F9D423] rounded-full animate-pulse-circle" style={{ animationDelay: "0.5s" }} />
         <div className="flex flex-col items-center mb-8 mt-8">
-          <Image src="/images/logo.png" alt="Logo" width={70} height={70} className="object-contain" priority />
+          <Image src={images.logo} alt="Logo" width={70} height={70} className="object-contain" priority />
         </div>
         <h1 className="text-white text-[26px] font-bold text-center mb-6 leading-tight">{name.toUpperCase()}, your Divine<br />Manifestation<br />Script is being<br />created...</h1>
         <p className="text-[#D4AF37] text-lg text-center mb-10 leading-relaxed">Processing your answers<br />with divine precision</p>

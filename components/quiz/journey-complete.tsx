@@ -3,6 +3,7 @@
 import Image from "next/image"
 import { categories, getBalance } from "@/lib/quiz-data"
 import { quizSteps } from "@/lib/quiz-data"
+import { images } from "@/lib/images"
 
 interface JourneyCompleteProps {
   name: string
@@ -22,7 +23,7 @@ export function JourneyComplete({ name }: JourneyCompleteProps) {
       <div className="mb-6">
         <div className="w-28 h-28 relative mx-auto">
           <Image
-            src="/images/logo.png"
+            src={images.logo}
             alt="The Age of Abundance"
             width={112}
             height={112}

@@ -3,6 +3,7 @@
 import { useSearchParams, useRouter } from "next/navigation"
 import Image from "next/image"
 import { useState } from "react"
+import { images } from "@/lib/images"
 
 export default function JourneyContent() {
   const searchParams = useSearchParams()
@@ -21,7 +22,7 @@ export default function JourneyContent() {
       {/* Background - positioned at bottom */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/background.png"
+          src={images.background}
           alt=""
           fill
           className="object-cover object-bottom"
@@ -39,7 +40,7 @@ export default function JourneyContent() {
         {/* Logo - small */}
         <div className="mb-4">
           <Image
-            src="/images/logo.png"
+            src={images.logo}
             alt="The Age of Abundance"
             width={80}
             height={80}

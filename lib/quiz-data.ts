@@ -1,3 +1,5 @@
+import { images } from "@/lib/images"
+
 export interface QuizCategory {
   id: string
   name: string
@@ -25,42 +27,42 @@ export const categories: QuizCategory[] = [
   {
     id: "i-choose-my-future",
     name: "I Choose My Future",
-    image: "/images/man-silhouette-stars.jpg",
+    image: images.manSilhouetteStars,
     unlockedAt: 2,
     unlockMessage: "You have the power to choose your future!",
   },
   {
     id: "100x-multiplication",
     name: "100x Multiplication",
-    image: "/images/golden-tree.png",
+    image: images.goldenTree,
     unlockedAt: 4,
     unlockMessage: "Your blessings will multiply 100 times!",
   },
   {
     id: "faith-decision",
     name: "Faith Decision",
-    image: "/images/praying-hands.jpg",
+    image: images.prayingHands,
     unlockedAt: 8,
     unlockMessage: "Your faith has opened the doors of abundance!",
   },
   {
     id: "dream-home",
     name: "Dream Home",
-    image: "/images/dream-home.jpg",
+    image: images.dreamHome,
     unlockedAt: 11,
     unlockMessage: "Your dream home is being prepared for you!",
   },
   {
     id: "dream-car",
     name: "Dream Car",
-    image: "/images/dream-car.jpg",
+    image: images.dreamCar,
     unlockedAt: 14,
     unlockMessage: "The car of your dreams is on its way!",
   },
   {
     id: "happy-family",
     name: "Happy Family",
-    image: "/images/happy-family.jpg",
+    image: images.happyFamily,
     unlockedAt: 17,
     unlockMessage: "The Happy Family You Deserve",
     unlockEmoji: "family",
@@ -68,28 +70,28 @@ export const categories: QuizCategory[] = [
   {
     id: "perfect-health",
     name: "Perfect Health",
-    image: "/images/perfect-health.jpg",
+    image: images.perfectHealth,
     unlockedAt: 19,
     unlockMessage: "Perfect health flows through your body!",
   },
   {
     id: "abundance",
     name: "Abundance",
-    image: "/images/abundance.jpg",
+    image: images.abundance,
     unlockedAt: 21,
     unlockMessage: "Imagine... $277,000 being deposited into your account right now!",
   },
   {
     id: "100x-boost",
     name: "100x Boost",
-    image: "/images/100x-boost.jpg",
+    image: images.boost100x,
     unlockedAt: 23,
     unlockMessage: "Your abundance has been multiplied 100x!",
   },
   {
     id: "blocks-broken",
     name: "Blocks Broken",
-    image: "/images/blocks-broken.jpg",
+    image: images.blocksBroken,
     unlockedAt: 27,
     unlockMessage: "All spiritual blocks have been broken!",
   },

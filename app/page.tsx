@@ -4,6 +4,7 @@ import type React from "react"
 import { useState, useRef } from "react"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
+import { images } from "@/lib/images"
 
 export default function Home() {
   const [name, setName] = useState("")
@@ -22,7 +23,7 @@ export default function Home() {
     <main className="min-h-screen w-full flex flex-col items-center justify-center relative overflow-hidden">
       <div className="absolute inset-0 z-0 pointer-events-none">
         <Image
-          src="/images/background.png"
+          src={images.background}
           alt=""
           fill
           className="object-cover"
@@ -33,7 +34,7 @@ export default function Home() {
       <div className="relative z-10 w-full max-w-md px-6 py-8 flex flex-col items-center justify-center text-center">
         <div className="mb-8 flex justify-center">
           <Image
-            src="/images/logo.png"
+            src={images.logo}
             alt="The Age of Abundance"
             width={200}
             height={200}

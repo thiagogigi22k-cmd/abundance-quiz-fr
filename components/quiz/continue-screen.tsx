@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import { images } from "@/lib/images"
 
 interface ContinueScreenProps {
   name: string
@@ -13,7 +14,7 @@ export function ContinueScreen({ name, onContinue }: ContinueScreenProps) {
       {/* Logo */}
       <div className="mb-8">
         <Image
-          src="/images/logo.png"
+          src={images.logo}
           alt="The Age of Abundance"
           width={160}
           height={160}
