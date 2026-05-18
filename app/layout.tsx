@@ -8,8 +8,8 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: 'The Age Of Abundance',
-  description: 'Begin your manifestation journey',
+  title: "L'Ere de l'Abondance",
+  description: 'Commence ton voyage de manifestation',
 }
 
 export const viewport: Viewport = {
@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="fr" suppressHydrationWarning>
       <head />
       <body className="font-sans antialiased bg-[#0a0a0a] text-[#f5f5f5]" suppressHydrationWarning>
         {children}

@@ -4,6 +4,7 @@ import { useState, useEffect, Suspense } from "react"
 import { useSearchParams, useRouter } from "next/navigation"
 import Image from "next/image"
 import { quizSteps } from "@/lib/quiz-data"
+import { images } from "@/lib/images"
 import { QuizDashboard } from "@/components/quiz/quiz-dashboard"
 import { QuizQuestion } from "@/components/quiz/quiz-question"
 import { UnlockedScreen } from "@/components/quiz/unlocked-screen"
@@ -77,7 +78,7 @@ function QuizContent() {
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/background.png"
+          src={images.background}
           alt="Background"
           fill
           className="object-cover"
@@ -97,7 +98,7 @@ function QuizContent() {
           <div className="mb-4 flex justify-center">
             <div className="w-16 h-16 relative">
               <Image
-                src="/images/logo.png"
+                src={images.logo}
                 alt="The Age of Abundance"
                 width={64}
                 height={64}
