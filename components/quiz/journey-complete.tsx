@@ -11,7 +11,7 @@ interface JourneyCompleteProps {
 
 export function JourneyComplete({ name }: JourneyCompleteProps) {
   const balance = getBalance(quizSteps.length - 1)
-  const formattedBalance = new Intl.NumberFormat("en-US", {
+  const formattedBalance = new Intl.NumberFormat("fr-FR", {
     style: "currency",
     currency: "USD",
     minimumFractionDigits: 2,
@@ -33,15 +33,15 @@ export function JourneyComplete({ name }: JourneyCompleteProps) {
       </div>
 
       <h1 className="text-3xl md:text-4xl font-black text-[#D4AF37] mb-2">
-        Congratulations!
+        Felicitations !
       </h1>
       <h2 className="text-xl font-bold text-[#f5f5f5] mb-6">
-        {name}, your journey is complete
+        {name}, ton voyage est termine
       </h2>
 
       {/* Final Balance */}
       <div className="bg-[#1a1a1a]/80 border-2 border-[#D4AF37]/50 rounded-xl p-6 mb-6 w-full max-w-sm">
-        <p className="text-xs text-[#aaa] mb-1 uppercase tracking-wider">Final Balance</p>
+        <p className="text-xs text-[#aaa] mb-1 uppercase tracking-wider">Solde Final</p>
         <p className="text-3xl font-black text-[#D4AF37]">{formattedBalance}</p>
         <div className="mt-3 flex items-center justify-center gap-2">
           <div className="h-0.5 w-12 bg-[#D4AF37]/30" />
@@ -51,7 +51,7 @@ export function JourneyComplete({ name }: JourneyCompleteProps) {
       </div>
 
       {/* All categories unlocked */}
-      <p className="text-sm text-[#aaa] mb-4">All blessings unlocked:</p>
+      <p className="text-sm text-[#aaa] mb-4">Toutes les benedictions debloquees :</p>
       <div className="grid grid-cols-5 gap-2 mb-8 w-full">
         {categories.map((cat) => (
           <div
@@ -77,10 +77,10 @@ export function JourneyComplete({ name }: JourneyCompleteProps) {
       {/* CTA */}
       <div className="bg-[#1a1a1a]/60 border border-[#D4AF37]/30 rounded-lg p-6 mb-6 w-full max-w-sm">
         <p className="text-base text-[#f5f5f5] mb-2 font-semibold">
-          Your abundance is ready.
+          Ton abondance est prete.
         </p>
         <p className="text-sm text-[#D4AF37] leading-relaxed">
-          God has prepared something extraordinary for you. The door is open. Are you ready to walk through it?
+          Dieu a prepare quelque chose d'extraordinaire pour toi. La porte est ouverte. Es-tu pret a la franchir ?
         </p>
       </div>
 
@@ -91,7 +91,7 @@ export function JourneyComplete({ name }: JourneyCompleteProps) {
         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
           <path d="M7 2v11h3v9l7-12h-4l4-8z" />
         </svg>
-        Claim My Abundance
+        Reclamer Mon Abondance
       </a>
     </div>
   )

@@ -44,18 +44,18 @@ export default function Home() {
         </div>
 
         <h2 className="text-2xl md:text-3xl font-bold text-[#f5f5f5] mb-6 text-balance">
-          {"If you're here right now..."}
+          {"Si tu es ici en ce moment..."}
         </h2>
 
         <p className="text-lg md:text-xl text-[#D4AF37] mb-8 leading-relaxed">
-          {"it's no accident. God chose this moment to change your story."}
+          {"ce n'est pas un hasard. Dieu a choisi ce moment pour changer ton histoire."}
         </p>
 
         <div className="flex items-center justify-center gap-2 mb-4 text-[#D4AF37]">
           <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
             <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
           </svg>
-          <span className="text-sm font-medium">Enter your name</span>
+          <span className="text-sm font-medium">Entre ton nom</span>
         </div>
 
         <form onSubmit={handleSubmit} className="w-full mb-6 relative z-30">
@@ -76,13 +76,13 @@ export default function Home() {
                 className="absolute inset-0 flex items-center justify-center pointer-events-none z-40"
                 onClick={() => inputRef.current?.focus()}
               >
-                <span className="text-gray-500 text-lg">Enter your name here</span>
+                <span className="text-gray-500 text-lg">Entre ton nom ici</span>
               </div>
             )}
           </div>
 
           <p className="text-sm md:text-base text-[#D4AF37] mb-6">
-            Enter your name to begin your manifestation journey.
+            Entre ton nom pour commencer ton voyage de manifestation.
           </p>
 
           <button
@@ -93,7 +93,7 @@ export default function Home() {
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
               <path d="M7 2v11h3v9l7-12h-4l4-8z" />
             </svg>
-            Start my Journey
+            Commencer mon Voyage
           </button>
         </form>
       </div>

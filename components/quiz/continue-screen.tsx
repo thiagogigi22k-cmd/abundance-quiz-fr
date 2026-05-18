@@ -28,7 +28,7 @@ export function ContinueScreen({ name, onContinue }: ContinueScreenProps) {
         {/* Header with name and spinning heart */}
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-xl font-bold text-[#f5f5f5] text-left">
-            {name}, before we continue...
+            {name}, avant de continuer...
           </h2>
           <span className="text-2xl animate-spin-y inline-block" style={{ perspective: "100px" }}>
             {"💛"}
@@ -38,16 +38,16 @@ export function ContinueScreen({ name, onContinue }: ContinueScreenProps) {
         {/* Inner quote box */}
         <div className="border border-[#D4AF37] rounded-xl p-5 mb-5">
           <p className="text-base text-[#D4AF37] font-semibold mb-3">
-            Repeat this phrase out loud:
+            Repete cette phrase a voix haute :
           </p>
           <p className="text-lg text-[#f5f5f5] italic leading-relaxed">
-            {'"The life of my dreams begins with my choice."'}
+            {'"La vie de mes reves commence avec mon choix."'}
           </p>
         </div>
 
         {/* Instruction text */}
         <p className="text-sm text-[#888] mb-5">
-          Only click continue after repeating it out loud.
+          Clique sur continuer seulement apres l'avoir repetee a voix haute.
         </p>
 
         {/* Continue Button */}
@@ -58,7 +58,7 @@ export function ContinueScreen({ name, onContinue }: ContinueScreenProps) {
           <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
             <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
           </svg>
-          Continue Journey
+          Continuer le Voyage
         </button>
       </div>
     </div>
