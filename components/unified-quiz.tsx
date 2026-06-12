@@ -605,7 +605,7 @@ export default function UnifiedQuiz() {
                     <div className="w-14 h-14 rounded-lg overflow-hidden mb-1 border border-[#D4AF37]">
                       <Image src={unlockedAchievements[i]?.image || "/placeholder.svg"} alt={unlockedAchievements[i]?.name || ""} width={56} height={56} className="object-cover w-full h-full" />
                     </div>
-                    <span className="text-[#D4AF37] text-[10px] font-bold text-center leading-tight">{unlockedAchievements[i]?.name.split(" ").slice(0, 2).join("\n")}</span>
+                    <span className="text-[#D4AF37] text-[10px] font-bold text-center leading-tight break-words w-full">{unlockedAchievements[i]?.name}</span>
                   </div>
                 ) : (
                   <div key={`locked-${i}`} className="bg-[#1a1a2e] rounded-lg border border-gray-600 p-1.5 flex flex-col items-center justify-center">
