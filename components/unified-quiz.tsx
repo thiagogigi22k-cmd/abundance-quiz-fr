@@ -511,7 +511,7 @@ export default function UnifiedQuiz() {
         <p className="text-gray-400 text-sm tracking-wider mb-1">SOLDE DU COMPTE</p>
         <p className="text-3xl font-bold animate-pulse-gold mb-4">0,00 €</p>
         <div className="w-full max-w-sm mb-4">
-          <p className="text-[#D4AF37] text-sm italic animate-pulse-gold mb-2">Your energy is aligning with the divine...</p>
+          <p className="text-[#D4AF37] text-sm italic animate-pulse-gold mb-2">Votre energie s'aligne avec le divin...</p>
           <div className="flex justify-end mb-2"><span className="text-gray-400 text-sm">5%</span></div>
           <div className="w-full h-[6px] bg-[#0d1829] rounded-full relative overflow-hidden">
             <div className="absolute left-0 top-1/2 -translate-y-1/2 w-4 h-[10px] bg-[#F9D423] rounded-full z-10" />

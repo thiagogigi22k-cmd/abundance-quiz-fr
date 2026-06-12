@@ -36,7 +36,7 @@ export function QuizDashboard({ name, stepIndex }: QuizDashboardProps) {
       {/* Progress */}
       <div className="mb-4">
         <div className="flex items-center justify-between mb-1">
-          <span className="text-xs text-[#aaa]">Your energy is aligning with the divine...</span>
+          <span className="text-xs text-[#aaa]">Votre energie s'aligne avec le divin...</span>
           <span className="text-xs font-bold text-[#D4AF37]">{progress}%</span>
         </div>
         <div className="w-full bg-[#333] rounded-full h-2.5">
