@@ -509,7 +509,7 @@ export default function UnifiedQuiz() {
         </div>
         <h1 className="text-[#D4AF37] text-xl font-bold text-center mb-4">Bonjour, {name} Ton Voyage a commence...</h1>
         <p className="text-gray-400 text-sm tracking-wider mb-1">SOLDE DU COMPTE</p>
-        <p className="text-3xl font-bold animate-pulse-gold mb-4">$0.00</p>
+        <p className="text-3xl font-bold animate-pulse-gold mb-4">0,00 €</p>
         <div className="w-full max-w-sm mb-4">
           <p className="text-[#D4AF37] text-sm italic animate-pulse-gold mb-2">Your energy is aligning with the divine...</p>
           <div className="flex justify-end mb-2"><span className="text-gray-400 text-sm">5%</span></div>
@@ -559,7 +559,7 @@ export default function UnifiedQuiz() {
             <h2 className="text-[#D4AF37] text-2xl font-bold text-center mb-3">Multiplication 100x</h2>
             <p className="text-white text-center text-base mb-5 leading-relaxed">{name}, aujourd'hui j'ajoute 100x de plus a ton compte {"—"} tu crois ?</p>
             <div className="bg-[#1a1a2e] rounded-lg py-3 px-4 mb-4">
-              <p className="text-center"><span className="text-[#D4AF37] font-bold text-lg">Nouveau Solde : </span><span className="text-[#D4AF37] font-bold text-lg">{displayBalance} $</span></p>
+              <p className="text-center"><span className="text-[#D4AF37] font-bold text-lg">Nouveau Solde : </span><span className="text-[#D4AF37] font-bold text-lg">{displayBalance} €</span></p>
             </div>
             <button onClick={handleContinue} className="w-full bg-[#F9D423] text-black font-bold py-3.5 px-6 rounded-lg text-base hover:bg-[#E5C31F] transition-colors flex items-center justify-center gap-2">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" /></svg>
@@ -587,7 +587,7 @@ export default function UnifiedQuiz() {
           <div className="mb-4"><Image src={images.logo} alt="Logo" width={60} height={60} className="object-contain" priority /></div>
           <h1 className="text-[#D4AF37] text-xl font-bold text-center mb-3">Bonjour, {name} Ton Voyage a commence...</h1>
           <p className="text-gray-400 text-sm tracking-wider mb-1">SOLDE DU COMPTE</p>
-          <p className="text-[#D4AF37] text-3xl font-bold mb-4 animate-pulse-gold">${formatBalance(balance)}</p>
+          <p className="text-[#D4AF37] text-3xl font-bold mb-4 animate-pulse-gold">{formatBalance(balance)} €</p>
           <div className="w-full max-w-md mb-4">
           <p className="text-[#D4AF37] text-sm italic animate-pulse-gold mb-2">Ton energie s'aligne avec le divin...</p>
             <div className="flex justify-end mb-1"><span className="text-gray-400 text-sm">{data.progress}%</span></div>
