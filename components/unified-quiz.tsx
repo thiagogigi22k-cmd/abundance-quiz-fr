@@ -755,11 +755,9 @@ export default function UnifiedQuiz() {
               {/* Seed Cards */}
               <div className="w-full flex flex-col gap-8">
                 {[
-                  { price: "0 $", desc: "La vie qui reste telle qu'elle est.", image: images.seedBarren, gold: false, link: "https://v0-ichoosethislfe.vercel.app/" },
-                  { price: "27 $", desc: "La vie qui commence a s'eveiller.", image: images.seedSprout, gold: true, link: "https://www.checkout-ds24.com/product/691574" },
-                  { price: "47 $", desc: "La vie qui grandit avec un but.", image: images.seedTree, gold: true, link: "https://www.checkout-ds24.com/product/691572" },
-                  { price: "77 $", desc: "La vie de pleine abondance et manifestation.", image: images.seedGolden, gold: true, link: "https://www.checkout-ds24.com/product/691571" },
-                  { price: "100 $", desc: "La vie de debordement divin et de miracles.", image: images.seedDivine, gold: true, link: "https://www.checkout-ds24.com/product/685315" },
+                  { price: "17 €", desc: "La vie qui commence a s'eveiller.", image: images.seedSprout, gold: true, link: "https://checkout.kashpay.com.br/checkout/checkout-1781024480523" },
+                  { price: "27 €", desc: "La vie de pleine abondance et manifestation.", image: images.seedGolden, gold: true, link: "https://checkout.kashpay.com.br/checkout/checkout-1781024447551" },
+                  { price: "37 €", desc: "La vie de debordement divin et de miracles.", image: images.seedDivine, gold: true, link: "https://checkout.kashpay.com.br/checkout/checkout-1781024381188" },
                 ].map((seed, index) => (
                   <div key={index} className="w-full flex flex-col items-center">
                     {/* Image */}
