@@ -11,10 +11,10 @@ export const images = {
   dreamCar: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dream-car-rjLlyXkZrc3YxmILfECj0GMGrF8xlA.jpg",
   happyFamily: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/happy-family-VEO47b71D34YWbmVap1A9dbPzXkHje.jpg",
   perfectHealth: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/perfect-health-Y4rG8k4EpTq5DYkaM4UQz3QK8bKNe9.jpg",
-  abundance: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/abundance-ScOXN45uvxNmVPYpbInwyHW3ytZRx9.jpg",
-  boost100x: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/100x-boost-mt6YorbT6h6W9sAKYCZ8gBlUKRsytr.jpg",
+  abundance: "/images/abundance-euro.png",
+  boost100x: "/images/boost100x-euro.png",
   blocksBroken: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/blocks-broken-dWrxdf8CWWYU1pXLtP7ho96dvaS5P3.jpg",
-  multiplication100x: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/100x-multiplication-fW2EfK4lLGZoCRx7KwmoxpNbo50Tfj.jpg",
+  multiplication100x: "/images/multiplication100x-euro.png",
   
   // Tree/abundance images
   goldenTree: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/golden-tree-LZPgGEZhkkPntXSYtvWbpw0JbYMLvd.png",

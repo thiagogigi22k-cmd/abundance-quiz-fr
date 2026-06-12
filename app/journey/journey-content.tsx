@@ -54,7 +54,7 @@ export default function JourneyContent() {
 
         {/* Account Balance */}
         <p className="text-gray-400 text-sm tracking-wider mb-1">SOLDE DU COMPTE</p>
-        <p className="text-3xl font-bold animate-pulse-gold mb-4">$0.00</p>
+        <p className="text-3xl font-bold animate-pulse-gold mb-4">0,00 €</p>
 
         {/* Progress bar section */}
         <div className="w-full max-w-sm mb-4">

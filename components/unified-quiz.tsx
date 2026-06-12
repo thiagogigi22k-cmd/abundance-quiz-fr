@@ -420,19 +420,19 @@ export default function UnifiedQuiz() {
   // Load Vturb script when final screen completes
   useEffect(() => {
     if (!isComplete) return
-    const DELAY_SECONDS = 448 // 7:28
+    const DELAY_SECONDS = 539 // 8:59
     const timer = setTimeout(() => {
       if (vturbRef.current && !vturbRef.current.querySelector("vturb-smartplayer")) {
         const player = document.createElement("vturb-smartplayer")
-        player.id = "vid-69990b836aee4c1df8327a79"
+        player.id = "vid-6a28531a922bc23f4fef18b2"
         player.style.cssText = "display: block; margin: 0 auto; width: 100%; max-width: 400px;"
         vturbRef.current.appendChild(player)
         const s = document.createElement("script")
-        s.src = "https://scripts.converteai.net/f8e465b5-f483-4d08-be19-bc14de388e59/players/69990b836aee4c1df8327a79/v4/player.js"
+        s.src = "https://scripts.converteai.net/f8e465b5-f483-4d08-be19-bc14de388e59/players/6a28531a922bc23f4fef18b2/v4/player.js"
         s.async = true
         document.head.appendChild(s)
 
-        // Listen for player ready, then watch video time to show offer at 7:28
+        // Listen for player ready, then watch video time to show offer at 8:59
         player.addEventListener("player:ready", () => {
           const checkTime = setInterval(() => {
             try {
@@ -509,9 +509,9 @@ export default function UnifiedQuiz() {
         </div>
         <h1 className="text-[#D4AF37] text-xl font-bold text-center mb-4">Bonjour, {name} Ton Voyage a commence...</h1>
         <p className="text-gray-400 text-sm tracking-wider mb-1">SOLDE DU COMPTE</p>
-        <p className="text-3xl font-bold animate-pulse-gold mb-4">$0.00</p>
+        <p className="text-3xl font-bold animate-pulse-gold mb-4">0,00 €</p>
         <div className="w-full max-w-sm mb-4">
-          <p className="text-[#D4AF37] text-sm italic animate-pulse-gold mb-2">Your energy is aligning with the divine...</p>
+          <p className="text-[#D4AF37] text-sm italic animate-pulse-gold mb-2">Votre energie s'aligne avec le divin...</p>
           <div className="flex justify-end mb-2"><span className="text-gray-400 text-sm">5%</span></div>
           <div className="w-full h-[6px] bg-[#0d1829] rounded-full relative overflow-hidden">
             <div className="absolute left-0 top-1/2 -translate-y-1/2 w-4 h-[10px] bg-[#F9D423] rounded-full z-10" />
@@ -559,7 +559,7 @@ export default function UnifiedQuiz() {
             <h2 className="text-[#D4AF37] text-2xl font-bold text-center mb-3">Multiplication 100x</h2>
             <p className="text-white text-center text-base mb-5 leading-relaxed">{name}, aujourd'hui j'ajoute 100x de plus a ton compte {"—"} tu crois ?</p>
             <div className="bg-[#1a1a2e] rounded-lg py-3 px-4 mb-4">
-              <p className="text-center"><span className="text-[#D4AF37] font-bold text-lg">Nouveau Solde : </span><span className="text-[#D4AF37] font-bold text-lg">{displayBalance} $</span></p>
+              <p className="text-center"><span className="text-[#D4AF37] font-bold text-lg">Nouveau Solde : </span><span className="text-[#D4AF37] font-bold text-lg">{displayBalance} €</span></p>
             </div>
             <button onClick={handleContinue} className="w-full bg-[#F9D423] text-black font-bold py-3.5 px-6 rounded-lg text-base hover:bg-[#E5C31F] transition-colors flex items-center justify-center gap-2">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" /></svg>
@@ -587,7 +587,7 @@ export default function UnifiedQuiz() {
           <div className="mb-4"><Image src={images.logo} alt="Logo" width={60} height={60} className="object-contain" priority /></div>
           <h1 className="text-[#D4AF37] text-xl font-bold text-center mb-3">Bonjour, {name} Ton Voyage a commence...</h1>
           <p className="text-gray-400 text-sm tracking-wider mb-1">SOLDE DU COMPTE</p>
-          <p className="text-[#D4AF37] text-3xl font-bold mb-4 animate-pulse-gold">${formatBalance(balance)}</p>
+          <p className="text-[#D4AF37] text-3xl font-bold mb-4 animate-pulse-gold">{formatBalance(balance)} €</p>
           <div className="w-full max-w-md mb-4">
           <p className="text-[#D4AF37] text-sm italic animate-pulse-gold mb-2">Ton energie s'aligne avec le divin...</p>
             <div className="flex justify-end mb-1"><span className="text-gray-400 text-sm">{data.progress}%</span></div>
@@ -605,7 +605,7 @@ export default function UnifiedQuiz() {
                     <div className="w-14 h-14 rounded-lg overflow-hidden mb-1 border border-[#D4AF37]">
                       <Image src={unlockedAchievements[i]?.image || "/placeholder.svg"} alt={unlockedAchievements[i]?.name || ""} width={56} height={56} className="object-cover w-full h-full" />
                     </div>
-                    <span className="text-[#D4AF37] text-[10px] font-bold text-center leading-tight">{unlockedAchievements[i]?.name.split(" ").slice(0, 2).join("\n")}</span>
+                    <span className="text-[#D4AF37] text-[10px] font-bold text-center leading-tight break-words w-full">{unlockedAchievements[i]?.name}</span>
                   </div>
                 ) : (
                   <div key={`locked-${i}`} className="bg-[#1a1a2e] rounded-lg border border-gray-600 p-1.5 flex flex-col items-center justify-center">
@@ -755,11 +755,9 @@ export default function UnifiedQuiz() {
               {/* Seed Cards */}
               <div className="w-full flex flex-col gap-8">
                 {[
-                  { price: "0 $", desc: "La vie qui reste telle qu'elle est.", image: images.seedBarren, gold: false, link: "https://v0-ichoosethislfe.vercel.app/" },
-                  { price: "27 $", desc: "La vie qui commence a s'eveiller.", image: images.seedSprout, gold: true, link: "https://www.checkout-ds24.com/product/691574" },
-                  { price: "47 $", desc: "La vie qui grandit avec un but.", image: images.seedTree, gold: true, link: "https://www.checkout-ds24.com/product/691572" },
-                  { price: "77 $", desc: "La vie de pleine abondance et manifestation.", image: images.seedGolden, gold: true, link: "https://www.checkout-ds24.com/product/691571" },
-                  { price: "100 $", desc: "La vie de debordement divin et de miracles.", image: images.seedDivine, gold: true, link: "https://www.checkout-ds24.com/product/685315" },
+                  { price: "17 €", desc: "La vie qui commence a s'eveiller.", image: images.seedSprout, gold: true, link: "https://checkout.kashpay.com.br/checkout/checkout-1781024480523" },
+                  { price: "27 €", desc: "La vie de pleine abondance et manifestation.", image: images.seedGolden, gold: true, link: "https://checkout.kashpay.com.br/checkout/checkout-1781024447551" },
+                  { price: "37 €", desc: "La vie de debordement divin et de miracles.", image: images.seedDivine, gold: true, link: "https://checkout.kashpay.com.br/checkout/checkout-1781024381188" },
                 ].map((seed, index) => (
                   <div key={index} className="w-full flex flex-col items-center">
                     {/* Image */}
