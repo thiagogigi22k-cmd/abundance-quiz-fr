@@ -2,7 +2,7 @@
 export const images = {
   // Background and logo
   background: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/background-IkFOKtxbFZPRqTnNv3mO1g0U3jCUyn.png",
-  logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-yIuq6D5dSQFiFWKzpLmllQzmNv3PoE.png",
+  logo: "/images/logo-fr.png",
   
   // Quiz unlock images
   manSilhouetteStars: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/man-silhouette-stars-k81Ol4g23i0nW1EGCGmUwzucy8QMPa.jpg",
