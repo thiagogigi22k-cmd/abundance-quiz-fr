@@ -755,9 +755,9 @@ export default function UnifiedQuiz() {
               {/* Seed Cards */}
               <div className="w-full flex flex-col gap-8">
                 {[
-                  { price: "17 €", desc: "La vie qui commence a s'eveiller.", image: images.seedSprout, gold: true, link: "https://ageofabundance.mycartpanda.com/checkout/211456744:1" },
-                  { price: "27 €", desc: "La vie de pleine abondance et manifestation.", image: images.seedGolden, gold: true, link: "https://ageofabundance.mycartpanda.com/checkout/211456836:1" },
-                  { price: "37 €", desc: "La vie de debordement divin et de miracles.", image: images.seedDivine, gold: true, link: "https://ageofabundance.mycartpanda.com/checkout/211456866:1" },
+                  { price: "17 €", desc: "La vie qui commence a s'eveiller.", image: images.seedSprout, gold: true, link: "https://www.checkout-ds24.com/product/711836" },
+                  { price: "27 €", desc: "La vie de pleine abondance et manifestation.", image: images.seedGolden, gold: true, link: "https://www.checkout-ds24.com/product/711835" },
+                  { price: "37 €", desc: "La vie de debordement divin et de miracles.", image: images.seedDivine, gold: true, link: "https://www.checkout-ds24.com/product/711819" },
                 ].map((seed, index) => (
                   <div key={index} className="w-full flex flex-col items-center">
                     {/* Image */}
