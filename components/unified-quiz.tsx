@@ -755,9 +755,9 @@ export default function UnifiedQuiz() {
               {/* Seed Cards */}
               <div className="w-full flex flex-col gap-8">
                 {[
-                  { price: "17 €", desc: "La vie qui commence a s'eveiller.", image: images.seedSprout, gold: true, link: "https://instituteabundance.salduu.com/p/la-era-de-la-abundancia1?pay=true" },
+                  { price: "17 €", desc: "La vie qui commence a s'eveiller.", image: images.seedSprout, gold: true, link: "https://instituteabundance.salduu.com/p/l-ere-de-l-abondance?pay=true" },
                   { price: "27 €", desc: "La vie de pleine abondance et manifestation.", image: images.seedGolden, gold: true, link: "https://instituteabundance.salduu.com/p/la-era-de-la-abundancia2?pay=true" },
-                  { price: "37 €", desc: "La vie de debordement divin et de miracles.", image: images.seedDivine, gold: true, link: "https://instituteabundance.salduu.com/p/l-re-de-l-abondance?pay=true" },
+                  { price: "37 €", desc: "La vie de debordement divin et de miracles.", image: images.seedDivine, gold: true, link: "https://instituteabundance.salduu.com/p/l-ere-de-l-abondance2?pay=true" },
                 ].map((seed, index) => (
                   <div key={index} className="w-full flex flex-col items-center">
                     {/* Image */}
